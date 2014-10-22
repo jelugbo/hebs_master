@@ -57,8 +57,8 @@ def start_payment_process(params):
         'PWD': settings.CC_PROCESSOR['PayPal'].get('USER_PWD', ''),
         'SIGNATURE': settings.CC_PROCESSOR['PayPal'].get('USER_SIGN', ''),
         'VERSION': settings.CC_PROCESSOR['PayPal'].get('API_VERSION', '78'),
-        'METHOD': 'DoDirectPayment'
-        'PAYMENTACTION': 'SALE'
+        'METHOD': 'DoDirectPayment',
+        'PAYMENTACTION': 'SALE',
         'AMT' : int(order.total_cost * 100),
         'AMOUNT': int(order.total_cost * 100),
         'CURRENCY': order.currency.upper(),
