@@ -1,3 +1,1 @@
-
-
-../../../../../cms/djangoapps/contentstore/management/commands/import.py
+include('../../../../../cms/djangoapps/contentstore/management/commands/import.py')
